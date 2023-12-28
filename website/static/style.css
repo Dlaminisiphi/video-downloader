@@ -1,0 +1,39 @@
+/* styles.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .container {
+    margin-top: 5rem;
+  }
+  .heading-col {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    margin-bottom: 0; /* Remove default margin for h1 */
+  }
+
+  .img-fluid {
+    margin-right: 10px; /* Adjust margin as needed */
+    padding-left: 7px; 
+  }
+  body {
+    background-color: #f8f9fa; 
+}
+
+.custom-container {
+    background-color: #ffffff4f; 
+    border-radius: 10px; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 50px; 
+}
+
+.custom-container img {
+    border-radius: 8px; 
+}

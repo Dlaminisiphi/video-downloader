@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set the character set and viewport for responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Link to Google Fonts for styling -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap CSS from CDN for styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <!-- Link to custom CSS file -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <title>{% block header %}Link Converter{% endblock %}</title>
+</head>
+<body>
+  {% block content %}
+  <!-- Container for the main content, centered and with top margin -->
+  <div class="container mt-5 text-center">
+    <!-- Row for the content -->
+    <div class="row">
+      <!-- Column that spans the entire width of the container -->
+      <div class="col-md-12">
+        <!-- Heading column with a title and an image -->
+        <div class="heading-col">
+
+          <h1>Youtube Downloader</h1>
+          <img src="https://cdn.pixabay.com/animation/2023/06/13/15/13/15-13-09-933_512.gif" alt="Video Downloader Image" class="img-fluid" width="100" height="90">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Subheading for the purpose of the form -->
+    <h3>Download YouTube and videos and mp3 here</h3>
+    
+    <!-- Form for submitting a link and selecting its type -->
+    <form action="/" method="post">
+      <!-- Input group for the link and its type -->
+      <div class="input-group mb-3">
+          <!-- Input field for the link -->
+          <label for="linkInput" class="sr-only">Enter your link</label>
+          <input type="text" class="form-control" placeholder="Enter your link" id="linkInput" name="linkInput">
+      </div>
+      
+      <!-- Button to submit the form -->
+      <button type="submit" class="btn btn-primary">Convert</button>
+    </form>
+  </div>
+  {% endblock %}
+</body>
+
+</html>
